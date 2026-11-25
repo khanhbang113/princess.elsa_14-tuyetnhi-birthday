@@ -106,26 +106,26 @@ function RoomCard({ room, onNavigate }) {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-lowest/60 p-space-md rounded-lg">
+        <div className="mt-space-sm flex items-center justify-between bg-surface-container-lowest/70 px-3 py-2.5 sm:p-space-md rounded-lg gap-2">
           <div className={[
-            'flex items-center gap-space-xs font-label-caps text-label-caps',
+            'flex items-center gap-1.5 font-label-caps text-[10px] sm:text-label-caps whitespace-nowrap flex-shrink-0',
             isSecondary ? 'text-secondary' : 'text-secondary-container',
           ].join(' ')}>
             <span className={[
-              'w-2 h-2 rounded-full animate-pulse',
+              'w-2 h-2 rounded-full animate-pulse flex-shrink-0',
               isSecondary ? 'bg-secondary' : 'bg-secondary-container',
             ].join(' ')} />
-            <span>{room.statusLabel}</span>
+            <span className="whitespace-nowrap">{room.statusLabel}</span>
           </div>
-          <span className={[
-            'inline-flex items-center gap-space-xs font-label-caps text-label-caps transition-colors',
+          <div className={[
+            'flex items-center gap-1.5 font-label-caps text-[10px] sm:text-label-caps transition-colors whitespace-nowrap flex-shrink-0',
             isSecondary ? 'text-primary group-hover:text-secondary' : 'text-tertiary group-hover:text-primary',
           ].join(' ')}>
-            <span>{room.enterLabel}</span>
-            <span className="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-code-terminal text-code-terminal">
+            <span className="whitespace-nowrap">{room.enterLabel}</span>
+            <span className="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-terminal text-[10px] sm:text-code-terminal whitespace-nowrap">
               {room.actionLabel}
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </div>

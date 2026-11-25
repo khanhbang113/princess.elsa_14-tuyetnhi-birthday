@@ -160,26 +160,25 @@ export default function WishesPage({ onNavigate }) {
           </button>
 
           {/* Current room indicator */}
-          <div className="bg-surface-container-low p-space-md md:p-space-lg rounded-xl flex items-center justify-between shadow-md">
-            <div className="flex items-center gap-space-md">
-              <div className="w-12 h-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(128,131,255,0.4)]">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
+          <div className="bg-surface-container-low p-3 sm:p-space-md md:p-space-lg rounded-xl flex items-center justify-between shadow-md gap-2">
+            <div className="flex items-center gap-3 sm:gap-space-md min-w-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(128,131,255,0.4)] flex-shrink-0">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
                   <rect height="14" rx="2" width="18" x="3" y="5" />
                   <path d="m3 7 9 6 9-6" />
                 </svg>
               </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-space-xs font-code-terminal text-label-sm text-secondary">
-                  <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+              <div className="flex flex-col min-w-0">
+                <div className="flex items-center gap-space-xs font-code-terminal text-[10px] sm:text-label-sm text-secondary whitespace-nowrap">
+                  <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse flex-shrink-0" />
                   <span>PHÒNG ĐANG MỞ</span>
                 </div>
-                <span className="font-headline-sm text-headline-sm text-on-surface font-bold">
+                <span className="text-[14px] sm:text-headline-sm text-on-surface font-bold truncate">
                   PHÒNG 02: LỜI CHÚC
                 </span>
-                
               </div>
             </div>
-            <span className="px-space-xs py-1 rounded bg-secondary-container/20 text-secondary font-label-caps text-label-caps">
+            <span className="px-2 py-1 rounded bg-secondary-container/20 text-secondary font-label-caps text-[10px] sm:text-label-caps whitespace-nowrap flex-shrink-0">
               [ HIỆN TẠI ]
             </span>
           </div>
